@@ -1,0 +1,92 @@
+
+
+@font-face {
+    font-family: jokerman;
+    src: url(Jokerman\ Font.ttf);
+}
+
+:root {
+    --yellow: #eedf95;
+    --mid-yellow: hsl(83, 57%, 75%);
+    --dark-blue: #082742;
+    --href-green: #9eb4fc;
+    --red: #FAB3B3;
+    --white: #fdffc177;
+    --pink: rgb(0, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(ghibli\ background.jpg);
+    background-color: var(--yellow);
+    background-size: cover;
+    position: relative;
+    
+}
+
+h1 {
+    color: var(--yellow);
+    font-size: 3.5rem;
+    font-family: jokerman;
+    -webkit-text-stroke: 0.8px  var(--pink);
+    text-align: center;
+    margin-top: 10%;
+    font-stretch: extra-expanded;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-blue) ;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    gap: 5rem;
+    position: relative;
+}
+
+button {
+    width: 150px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: var(--white);
+    color: var(--pink);
+    border: 3px solid var(--pink);
+    font-weight: bold;
+    font-family: jokerman;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+}
+
+
+@media only screen and (max-width: 420px) {
+    body {
+    
+        background-size: 100vh;
+        position: relative;
+        
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+   .buttons { gap: 5rem; font-size: 0.8rem; margin-top: 90px;}
+
+   button {
+    width: 120px;
+    height: 70px;
+   }
+}
